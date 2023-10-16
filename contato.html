@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contato - Sua Loja de Jogos</title>
+</head>
+<body>
+    <header>
+        <h1>IFJogos</h1>
+        <img src="imagens/banner.jpg" alt="Banner da Loja">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Fale Conosco</h2>
+        <form>
+            <fieldset>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </fieldset>
+            <fieldset>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <fieldset>
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" id="data" name="data">
+            </fieldset>
+            <fieldset>
+                <label for "telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </fieldset>
+            <fieldset>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <address>
+            <p>Dados de Contato:</p>
+            <p>Telefone: (123) 456-7890</p>
+            <p>E-mail: contato@sualojadejogos.com</p>
+            <p>Endereço: Rua da Loja, Cidade</p>
+        </address>
+        <div class="redes-sociais">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
