@@ -65,7 +65,7 @@ section {
 figure {
     padding: 10px;
     text-align: center;
-    margin: 10px; /* espaçamento entre as figuras */
+    margin: 10px;
 }
 
 figure img {
@@ -115,43 +115,28 @@ address {
     main section {
         margin: 20px 0;
     }
+
+    form label, form input, form select, form textarea {
+        width: 100%;
+    }
 }
 
-form fieldset {
-    margin-bottom: 10px;
-}
+/* Responsividade para telas menores (móveis) */
+@media screen and (max-width: 400px) {
+    header h1 {
+        font-size: 24px;
+    }
 
-form label {
-    display: block;
-    font-weight: bold;
-}
+    form label {
+        font-size: 14px;
+    }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="date"],
-form input[type="tel"],
-form select,
-form textarea {
-    width: 250px; /* Largura fixa de 250px */
-    height: 25px; /* Altura fixa de 25px */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px; /* Tamanho da fonte */
-    margin: 5px 0;
-}
-
-form textarea {
-    height: 120px;
-}
-
-/* Estilos  botão de envio */
-form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"],
+    form input[type="tel"],
+    form select,
+    form textarea {
+        width: 100%;
+    }
 }
